@@ -1,0 +1,20 @@
+{
+  "name": "my-line-bot",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^11.4.0",
+    "hono": "^4.13.16"
+  },
+  "devDependencies": {
+    "wrangler": "^4.110.0"
+  },
+  "allowScripts": {
+    "workerd@1.20261117.1": true,
+    "esbuild@0.28.2": true
+  }
+}
